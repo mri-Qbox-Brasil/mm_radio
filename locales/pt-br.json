@@ -1,0 +1,27 @@
+{
+    "join_notify_description": "Entrou na Estação %.2f MHz",
+    "invalid_notify_description": "Estação %.2f MHz não está disponível",
+    "already_notify_description": "Você já está conectado à Estação %.2f MHz",
+    "restricted_notify_description": "Você não tem permissão para entrar na Estação %.2f MHz",
+    "volume_notify_description": "Volume definido para %d%%",
+    "unsuccess_name": "Falha ao Alterar o Nome",
+    "jammer_notify_description": "Falha ao Conectar-se à Estação %.2f MHz",
+    "toggle_defean": "Rádio Silenciado",
+    "toggle_undeafen": "Rádio Desmutado",
+    
+    "ui": {
+        "header": "NO RÁDIO",
+        "frequency": "Frequência",
+        "disconnect": "DESCONECTAR",
+        "notconnected": "NÃO CONECTADO",
+        "channels": "Canais",
+        "radio": "Rádio",
+        "members": "Membros",
+        "favorites": "Favoritos",
+        "recommended": "Recomendados",
+        "clear": "LIMPAR",
+        "hide_overlay": "OCULTAR OVERLAY",
+        "show_overlay": "MOSTRAR OVERLAY",
+        "save": "SALVAR"
+    }
+}
