@@ -1,7 +1,7 @@
-Shared.MaxFrequency = 500.00 -- Max Limit of Radio Channel
+Shared.MaxFrequency = 999.00 -- Max Limit of Radio Channel
 
 Shared.Jammer = {
-    state = true, -- to use jammer system or not 
+    state = false, -- to use jammer system or not 
     model = 'sm_prop_smug_jammer', -- prop to spawn for jammer
     distance = 30.0, -- range of jammer effective
     permission = {"police"}, -- permission how can setup jammer (job/gang)
@@ -15,7 +15,7 @@ Shared.Jammer = {
 }
 
 Shared.Battery = {
-    state = true, -- to use battery system or not
+    state = false, -- to use battery system or not
     consume = 1, -- battery consume rate
     depletionTime = 1, -- in minute, every 1 minute battery will decrease by consume value
 }
