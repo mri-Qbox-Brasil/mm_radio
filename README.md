@@ -53,8 +53,6 @@ pnpm run build
 # GUIDE:
 https://master-mind-store.gitbook.io/dashboard/free-release/radio
 
-# Installation Video: https://youtu.be/r3IPvXDpMVs
-
 ## Discord
 https://discord.gg/Au4uAT3frK
 

@@ -1,0 +1,31 @@
+{
+  "join_notify_description": "Conectado à Estação %.2f MHz",
+  "invalid_notify_description": "Estação %.2f MHz não está disponível",
+  "already_notify_description": "Você já está conectado à Estação %.2f MHz",
+  "restricted_notify_description": "Você não tem permissão para se conectar à Estação %.2f MHz",
+  "volume_notify_description": "Volume ajustado para %d%%",
+  "unsuccess_name": "Falha ao Mudar o Nome",
+  "jammer_notify_description": "Falha ao Conectar à Estação %.2f MHz",
+  "toggle_defean": "Rádio surdo",
+  "toggle_undeafen": "Rádio não surdo",
+
+  "ui": {
+    "header": "NO RÁDIO",
+    "frequency": "Frequência",
+    "disconnect": "DESCONECTAR",
+    "notconnected": "NÃO CONECTADO",
+    "channels": "Canais",
+    "radio": "Rádio",
+    "members": "Membros",
+    "favorites": "Favoritos",
+    "recommended": "Recomendados",
+    "clear": "LIMPAR",
+    "hide_overlay": "OCULTAR SOBREPOSIÇÃO",
+    "show_overlay": "MOSTRAR SOBREPOSIÇÃO",
+    "save": "SALVAR",
+    "radio_settings": "Configurações do Rádio",
+    "move_radio": "Mover Rádio",
+    "allow_move": "Permitir Movimento",
+    "overlay_settings": "Configurações da Sobreposição"
+  }
+}
