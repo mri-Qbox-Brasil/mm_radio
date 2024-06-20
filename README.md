@@ -53,8 +53,12 @@ pnpm run build
 # GUIDE:
 https://master-mind-store.gitbook.io/dashboard/free-release/radio
 
+# Installation Video: https://youtu.be/r3IPvXDpMVs
+
 ## Discord
 https://discord.gg/Au4uAT3frK
 
 ## Tebex Store
 https://master-mind.tebex.io/
+
+<a href="//www.dmca.com/Protection/Status.aspx?ID=a7958e65-13a0-476f-9ffe-7c07409cc14a" title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca_protected_sml_120h.png?ID=a7958e65-13a0-476f-9ffe-7c07409cc14a"  alt="DMCA.com Protection Status" /></a>
