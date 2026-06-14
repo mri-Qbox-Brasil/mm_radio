@@ -8,12 +8,14 @@
   "jammer_notify_description": "Falha ao Conectar à Estação %.2f MHz",
   "toggle_defean": "Rádio surdo",
   "toggle_undeafen": "Rádio não surdo",
+  "failed_mute": "Falha ao Silenciar Jogador",
 
   "ui": {
     "header": "NO RÁDIO",
     "frequency": "Frequência",
     "disconnect": "DESCONECTAR",
     "notconnected": "NÃO CONECTADO",
+    "settings": "Configurações",
     "channels": "Canais",
     "radio": "Rádio",
     "members": "Membros",
@@ -26,6 +28,7 @@
     "radio_settings": "Configurações do Rádio",
     "move_radio": "Mover Rádio",
     "allow_move": "Permitir Movimento",
-    "overlay_settings": "Configurações da Sobreposição"
+    "overlay_settings": "Configurações da Sobreposição",
+    "enableClicks": "Som do Rádio"
   }
 }

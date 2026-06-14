@@ -8,7 +8,8 @@
     "jammer_notify_description": "No se pudo conectar con la estación %.2f MHz",
     "toggle_defean": "Radio sordo",
     "toggle_undeafen": "Radio no sordo",
-    
+    "failed_mute": "No se pudo silenciar al jugador",
+
     "ui": {
         "header": "EN RADIO",
         "frequency": "Frecuencia",
@@ -27,6 +28,7 @@
         "radio_settings": "Configuración",
         "move_radio": "Mover radio",
         "allow_move": "Permitir mover",
-        "overlay_settings": "Configuración superposición"
+        "overlay_settings": "Configuración superposición",
+        "enableClicks": "Sonido de Radio"
     }
 }

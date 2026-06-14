@@ -8,7 +8,8 @@
     "jammer_notify_description": "Nepodařilo se připojit k %.2f MHz",
     "toggle_defean": "Radio ztlumeno",
     "toggle_undeafen": "Radio odtlumeno",
-    
+    "failed_mute": "Nepodařilo se ztlumit hráče",
+
     "ui": {
         "header": "PŘIPOJENO",
         "frequency": "Frekvence",
@@ -27,6 +28,7 @@
         "radio_settings": "NASTAVENÍ RÁDIA",
         "move_radio": "POHYB RÁDIA",
         "allow_move": "POVOLENÝ POHYB",
-        "overlay_settings": "NASTAVENÍ PŘEKRYTÍ"
+        "overlay_settings": "NASTAVENÍ PŘEKRYTÍ",
+        "enableClicks": "Zvuk rádia"
     }
 }

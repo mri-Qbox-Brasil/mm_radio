@@ -8,7 +8,8 @@
     "jammer_notify_description": "Vous avez été brouillé par la station %.2f MHz",
     "toggle_defean": "Radio assourdie",
     "toggle_undeafen": "Radio non assourdie",
-    
+    "failed_mute": "Impossible de mettre le joueur en sourdine",
+
     "ui": {
         "header": "À LA RADIO",
         "frequency": "Fréquence",
@@ -27,6 +28,7 @@
         "radio_settings": "Paramètres radio",
         "move_radio": "Déplacer radio",
         "allow_move": "Déplacement",
-        "overlay_settings": "Paramètres de superposition"
+        "overlay_settings": "Paramètres de superposition",
+        "enableClicks": "Son de la Radio"
     }
 }
