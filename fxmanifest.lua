@@ -26,6 +26,7 @@ client_script {
 
 server_script {
     'server/main.lua',
+    'server/items.lua',
 }
 
 files {

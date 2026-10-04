@@ -43,14 +43,14 @@ Na inicialização, o recurso confere a versão do `ox_lib` e a existência de `
    ```
    ensure mm_radio
    ```
-3. Cadastre os itens no `ox_inventory` (ver [Itens](#itens)).
+3. Cadastre os itens no `ox_inventory` (ver [Itens](#itens)). O uso é registrado pelo próprio recurso.
 4. Confirme que o `build/` está presente. Nesta fork ele é versionado no repositório.
 
 ---
 
 ## Itens
 
-O recurso não registra item usável. Quem dispara o rádio é o próprio `ox_inventory`, pelo `client.event` de cada item em `ox_inventory/data/items.lua`:
+Os itens são registrados como usáveis em runtime (`server/items.lua`), com `exports.qbx_core:CreateUseableItem`. No `ox_inventory/data/items.lua` basta o cadastro comum do item, sem `client.event`:
 
 ```lua
 ['radio'] = {
@@ -58,37 +58,14 @@ O recurso não registra item usável. Quem dispara o rádio é o próprio `ox_in
     weight = 1000,
     stack = false,
     allowArmed = true,
-    consume = 0,
-    client = {
-        event = 'mm_radio:client:use'
-    }
-},
-
--- Só com Shared.Jammer.state = true
-['jammer'] = {
-    label = 'Jammer de Rádio',
-    weight = 10000,
-    allowArmed = true,
-    client = {
-        event = 'mm_radio:client:usejammer'
-    }
-},
-
--- Só com Shared.Battery.state = true
-['radiocell'] = {
-    label = 'Bateria de Rádio',
-    weight = 1000,
-    stack = true,
-    allowArmed = true,
-    client = {
-        event = 'mm_radio:client:recharge'
-    }
 },
 ```
 
+O `jammer` só é registrado com `Shared.Jammer.state = true`, e o `radiocell` só com `Shared.Battery.state = true`.
+
 | Item | Uso | Observação |
 |---|---|---|
-| `radio` | Abre a UI do rádio | O nome vem de `Shared.RadioItem`, que aceita mais de um item. `consume = 0` para o item não sumir ao usar |
+| `radio` | Abre a UI do rádio | Registra cada nome de `Shared.RadioItem`, que aceita mais de um item |
 | `jammer` | Coloca um jammer à frente do jogador | O servidor confere a permissão e remove o item ao colocar |
 | `radiocell` | Recarrega a bateria do rádio para 100% | O servidor remove uma célula ao recarregar |
 
@@ -231,7 +208,7 @@ O statebag `qbx_medical:deathState` do jogador marca morte e last stand. Com `Sh
 
 ### ox_inventory
 
-Os itens disparam os eventos do rádio pelo `client.event` (ver [Itens](#itens)). O `radioId` é gravado com `exports.ox_inventory:SetMetadata`, e o evento `ox_inventory:updateInventory` dispara a recontagem dos rádios que o jogador tem. Ao perder o último rádio, o jogador sai do canal.
+O uso dos itens chega pelo `CreateUseableItem` do `qbx_core`, que o `ox_inventory` chama ao usar o item. O `radioId` é gravado com `exports.ox_inventory:SetMetadata`, e o evento `ox_inventory:updateInventory` dispara a recontagem dos rádios que o jogador tem. Ao perder o último rádio, o jogador sai do canal.
 
 ---
 
@@ -303,7 +280,8 @@ mm_radio/
 │   ├── event.lua         # eventos de rede, sync dos jammers, morte, qbx_core, pma-voice
 │   └── nui.lua           # callbacks da NUI (join, leave, volume, favoritos, layout)
 ├── server/
-│   └── main.lua          # canais, jammers, bateria, validações, comandos, callbacks
+│   ├── main.lua          # canais, jammers, bateria, validações, comandos, callbacks
+│   └── items.lua         # registro dos itens usáveis (radio, jammer, radiocell)
 ├── shared/
 │   ├── init.lua          # flags gerais e checagem de dependências
 │   └── shared.lua        # frequência máxima, itens, jammer, bateria, canais restritos, nomes de canal
