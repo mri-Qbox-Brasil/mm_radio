@@ -402,5 +402,3 @@ lib.addCommand('remradiodata', {
 }, function(source)
     TriggerClientEvent('mm_radio:client:removedata', source)
 end)
-
-lib.versionCheck('Qbox-project/mm_radio')
